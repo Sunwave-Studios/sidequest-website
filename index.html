@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SideQuest — a small weird thing to do today. Privacy policy and support.">
+<title>SideQuest — Privacy & Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F3ECDD;
+    --bg-deep: #EBE2CF;
+    --surface: #FBF6EA;
+    --ink: #2A2118;
+    --ink-2: #5B4D3E;
+    --ink-3: #8A7A66;
+    --line: rgba(42, 33, 24, 0.10);
+    --accent: #CF583C;
+    --accent-ink: #FFF8EE;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+  a:hover { opacity: 0.8; }
+
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+
+  header.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 40px;
+  }
+
+  .mark {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: var(--accent);
+    box-shadow: 0 8px 24px rgba(207, 88, 60, 0.18);
+    display: grid;
+    place-items: center;
+  }
+
+  .wordmark {
+    font-family: 'Bricolage Grotesque', serif;
+    font-weight: 600;
+    font-size: 44px;
+    letter-spacing: -0.025em;
+    line-height: 1;
+    color: var(--ink);
+  }
+
+  .tagline {
+    color: var(--ink-2);
+    font-size: 17px;
+    line-height: 1.45;
+    max-width: 460px;
+  }
+
+  section {
+    margin-top: 48px;
+  }
+
+  h2 {
+    font-family: 'Bricolage Grotesque', serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: var(--ink-2);
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 16px;
+  }
+
+  p strong { color: var(--ink); font-weight: 600; }
+
+  .eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink-3);
+    margin-bottom: 10px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 22px 24px;
+    margin-top: 18px;
+  }
+
+  .card .label {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .card .value {
+    font-size: 17px;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-3);
+    font-size: 13px;
+  }
+
+  @media (max-width: 480px) {
+    .page { padding: 48px 20px 64px; }
+    .wordmark { font-size: 36px; }
+    h2 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+
+    <header class="hero">
+      <div class="mark" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="60,18 82,60 38,60" fill="#FBF6EA"/>
+          <polygon points="60,104 38,60 82,60" fill="#7A2E1E"/>
+          <circle cx="60" cy="60" r="6.5" fill="#2A2118"/>
+          <circle cx="60" cy="60" r="2.5" fill="#FBF6EA"/>
+        </svg>
+      </div>
+      <h1 class="wordmark">SideQuest</h1>
+      <p class="tagline">
+        One small weird thing to do today. One bigger quest a week.
+        Local-only, on your device — no accounts, no servers, no tracking.
+      </p>
+    </header>
+
+    <section id="privacy">
+      <div class="eyebrow">Privacy</div>
+      <h2>Privacy policy</h2>
+      <p>
+        <strong>SideQuest does not collect, store, transmit, or share any personal data.</strong>
+        Everything you create — your profile name, completed quests, streaks, theme
+        and font preferences — stays in your device's local storage. Nothing is
+        ever sent off-device.
+      </p>
+      <p>
+        We do not use analytics, ad networks, crash reporting, or any third-party
+        services. There is no account on a server because there is no server.
+        Notifications are scheduled and fired entirely on your device by the
+        operating system.
+      </p>
+      <p>
+        If you uninstall the app or tap <strong>Delete account &amp; data</strong>
+        in Settings, all of your data is permanently removed from your device.
+        Because we never had a copy, there is no further deletion request
+        required from us.
+      </p>
+      <p>
+        Children under 13: SideQuest is rated for general audiences and does not
+        knowingly collect data from anyone, including children, because it does
+        not collect data at all.
+      </p>
+    </section>
+
+    <section id="support">
+      <div class="eyebrow">Support</div>
+      <h2>Support &amp; contact</h2>
+      <p>
+        Bug, feature idea, or question? Email us — we read every message.
+      </p>
+      <div class="card">
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:parkerjrox@gmail.com">parkerjrox@gmail.com</a></div>
+      </div>
+    </section>
+
+    <footer>
+      Last updated: May 12, 2026 · © SideQuest
+    </footer>
+
+  </main>
+</body>
+</html>
