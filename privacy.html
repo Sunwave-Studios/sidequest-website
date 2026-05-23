@@ -11,9 +11,8 @@
   <p>Last updated: May 23, 2026</p>
   <p><strong>Summary</strong></p>
   <ul>
-    <li>Sidequest is a local-first app. Data stays on your device by default.</li>
-    <li>Optional cloud sync and account features use a Supabase backend controlled by the developer; cloud sync runs only if you create or sign into an account.</li>
-    <li>We do not sell personal information or share it with advertisers or analytics providers by default.</li>
+    <li>Sidequest requires an account and stores all user data in a cloud backend operated by the developer.</li>
+    <li>We do not sell personal information or share it with advertisers.</li>
   </ul>
 
   <h2>1. Controller and contact</h2>
@@ -21,43 +20,35 @@
   Contact for privacy/data requests: <a href="mailto:parkerjrox@gmail.com">parkerjrox@gmail.com</a><br>
   Project repository: <a href="https://github.com/jaxgardner/sidequest">https://github.com/jaxgardner/sidequest</a></p>
 
-  <h2>2. What data we collect</h2>
-  <h3>Local-only data (default)</h3>
+  <h2>2. What data we collect and store</h2>
+  <p>All data is stored in the developer’s cloud backend and associated with your account. This includes, but is not limited to:</p>
   <ul>
-    <li>Profile fields you enter locally (display name).</li>
-    <li>Quest data stored locally: saved quests, completions, skipped/finished state, preferences, and lightweight key/value settings.</li>
-    <li>App preferences such as theme, typography, and notification toggles.</li>
-    <li>Device-local identifiers created by the app for internal use only (not transmitted unless you opt in to cloud sync).</li>
-  </ul>
-
-  <h3>Optional cloud data (only if you sign in / opt into sync)</h3>
-  <ul>
-    <li>Account identifier and email used for authentication.</li>
-    <li>Profile information you explicitly save to your account.</li>
-    <li>Quest completions, group membership, and other app content you choose to sync.</li>
-    <li>Notification preferences if the app is configured to persist them server-side.</li>
+    <li>Account identifiers and authentication information (email where provided).</li>
+    <li>Profile information you submit (display name and related profile fields).</li>
+    <li>App content and usage data: quest completions, saved quests, group membership, preferences, and other content you create or submit through the app.</li>
+    <li>Notification preferences and scheduling metadata required to deliver reminders.</li>
   </ul>
 
   <h2>3. How we use your data</h2>
-  <p>Local storage: to provide the app experience (daily quests, history, preferences). Cloud sync (optional): to back up and share your data across devices when you sign in. Notifications: if you enable scheduled reminders, the app schedules them with the operating system; the app may persist notification preferences locally or server-side depending on configuration.</p>
+  <p>Data is used to provide, operate, and improve the app, including account management, syncing across devices, group features, and notifications. We may use aggregated or anonymized data for internal analytics to improve the service; such aggregates do not identify individual users.</p>
 
   <h2>4. Sharing and third parties</h2>
-  <p>We do not sell personal data. We do not integrate third-party analytics or advertising SDKs by default. If you opt into cloud features, your data is stored on the developer’s Supabase backend (or another backend you configure). That backend is subject to its own policies and security controls. The app may rely on OS-level services (e.g., local notifications), which are governed by the OS vendor.</p>
+  <p>We do not sell personal data or share it with advertisers. We do not include third-party advertising or analytics SDKs in the official app builds beyond minimal server-side analytics used to run the service. Any third-party services used to host or operate the backend are governed by their own policies. The app may rely on OS-level services (for example, push notification delivery); those services are governed by the OS vendor.</p>
 
   <h2>5. Retention and deletion</h2>
-  <p>Local data remains on your device until you delete the app or use the app’s delete functionality. If you create an account and then delete it through the app, the app will attempt to remove your server-side data; deletion requests may take effect after backend processing and cannot be undone.</p>
+  <p>Your account data is retained on the developer’s servers for as long as the account exists or as required to provide the service. You can request deletion of your account and associated data via the app’s account deletion feature or by contacting the developer at parkerjrox@gmail.com. Server-side deletions may take effect after backend processing and are irreversible.</p>
 
   <h2>6. Security</h2>
-  <p>The developer takes reasonable steps to secure data in transit and at rest when cloud sync is used (e.g., HTTPS and Supabase authentication). No storage method is perfectly secure; avoid storing highly sensitive personal information in the app.</p>
+  <p>The developer takes commercially reasonable steps to protect data in transit and at rest. However, no method of transmission or storage is completely secure; avoid storing highly sensitive personal information in the app.</p>
 
   <h2>7. Children’s privacy</h2>
-  <p>The app is not intended for children under 13. If you believe a child under 13 has provided personal information, contact the developer to request deletion.</p>
+  <p>The app is not intended for children under 13. If you believe a child under 13 has created an account, contact the developer to request deletion.</p>
 
   <h2>8. Changes to this policy</h2>
   <p>We may update this policy from time to time. The “Last updated” date at the top will change; substantial changes will be communicated via release notes or an in-app notice when practical.</p>
 
   <h2>9. Additional notes</h2>
-  <p>This privacy policy describes common Sidequest configurations. If you are using a build modified by a third party (custom server, analytics, or hosting), review that build’s specific privacy disclosures.</p>
+  <p>This policy describes the official builds of Sidequest provided by the developer. Third-party builds or forks may operate differently; review their specific disclosures before use.</p>
 
   <hr>
   <p>Questions or requests: <a href="mailto:parkerjrox@gmail.com">parkerjrox@gmail.com</a></p>
